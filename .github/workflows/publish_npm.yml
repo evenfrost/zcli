@@ -20,7 +20,7 @@ jobs:
         echo "${{ secrets.AUTOMATED_RELEASE_WRITE_KEY }}" >> ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         cat ~/.ssh/id_rsa
-        echo "some text1" >> README.md
+        echo "some text11" >> README.md
         git status
         git add .
         git commit -m "test commit"
