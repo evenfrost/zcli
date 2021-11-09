@@ -1,0 +1,22 @@
+name: publish
+
+on:
+  push:
+    branches: test_protected
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: zendesk/checkout@v2
+    - uses: zendesk/setup-node@v2.1.2
+      with:
+        node-version: '12.x'
+    - name: publish_on_merge
+      run: |
+        echo "some text" >> README.md
+        git status
+        git add .
+        git commit -m "test commit"
+        git push
+        
