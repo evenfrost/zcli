@@ -15,12 +15,6 @@ For more about ZCLI see [the full documentation.](/docs)
 
 This is a [Node.js](https://nodejs.org/en/) module available through the [npm registry.](https://www.npmjs.com/package/@zendesk/zcli)
 
-Before installing, download and install Node.js. Node.js 12.10 or higher is required. Installation is done using the npm install command:
-
-```
-$ npm install @zendesk/zcli -g
-```
-
 ## Installation prerequisites for Linux
 
 Currently ZCLI has a dependency on `libsecret` to save authentication information securely in the operating system's keychain.
@@ -29,6 +23,14 @@ Depending on your distribution, you will need to run one of the following comman
 - Debian/Ubuntu: `sudo apt-get install libsecret-1-dev`
 - Red Hat-based: `sudo yum install libsecret-devel`
 - Arch Linux: `sudo pacman -S libsecret`
+
+## Installation steps
+
+Before installing, download and install Node.js. Node.js 12.10 or higher is required. Installation is done using the npm install command:
+
+```
+$ npm install @zendesk/zcli -g
+```
 
 ## Note for Windows users running Linux on WSL
 
